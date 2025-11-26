@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science Tutor Examination System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+        .print-only {
+          display: block !important;
+        }
+        body, html, #root {
+          background: white;
+          height: auto;
+          overflow: visible;
+        }
+        .page-break {
+          page-break-before: always;
+        }
+        /* Reset max-widths for full page printing */
+        .max-w-7xl, .max-w-4xl, .max-w-lg, .w-full {
+            max-width: none !important;
+            width: 100% !important;
+        }
+        /* Ensure scrolling containers expand */
+        .overflow-hidden, .overflow-x-auto, .overflow-y-auto {
+            overflow: visible !important;
+            height: auto !important;
+        }
+        .shadow-xl, .shadow-2xl, .shadow-lg, .shadow-md, .shadow-sm, .shadow {
+            box-shadow: none !important;
+        }
+        /* Hide watermarks if they interfere, or make them subtle */
+        .watermark {
+            opacity: 0.05 !important;
+        }
+      }
+      .print-only {
+          display: none;
+      }
+      .watermark {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        opacity: 0.1;
+        font-size: 4rem;
+        font-weight: bold;
+        color: gray;
+        pointer-events: none;
+        z-index: 0;
+        white-space: nowrap;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

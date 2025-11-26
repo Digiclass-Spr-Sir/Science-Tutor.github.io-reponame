@@ -1,0 +1,5 @@
+{
+  "name": "Science Tutor Exam System",
+  "description": "An online examination portal with Moderator and Student roles, featuring AI-assisted question generation, analog timers, and performance reporting.",
+  "requestFramePermissions": []
+}
